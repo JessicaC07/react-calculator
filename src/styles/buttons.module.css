@@ -1,0 +1,73 @@
+.buttons {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: .5rem 0;
+    margin: .2rem;
+	color: bisque;
+    border: none;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.buttons .clear {
+    background-color: rgb(113, 59, 59);
+}
+
+.buttons .number {
+    background-color: rgb(93, 88, 88);
+}
+
+.buttons .operator {
+    background-color: rgb(165, 113, 58);
+}
+
+.buttons .equal {
+    background-color: rgb(14, 158, 69);
+}
+
+
+/* Placing on grid */
+
+.buttons .c,
+.buttons .four,
+.buttons .five,
+.buttons .six   {
+    grid-row: 2 / 3;
+}
+
+.buttons .one {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.buttons .two {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.buttons .three {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+.buttons .zero {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+.buttons .add,
+.buttons .divide {
+    grid-row: 2 / 4;
+}
+
+.buttons .equal {
+    grid-row: 4 / 5;
+    grid-column: 5 / 7;
+
+}
